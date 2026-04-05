@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: propiq_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Models:/app/Models
+    restart: unless-stopped
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.Streamlit
+    container_name: propiq_streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./Models:/app/Models
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:8000
+    restart: unless-stopped
