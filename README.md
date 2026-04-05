@@ -59,6 +59,24 @@ covering the complete data science lifecycle:
   - Each bathroom: **+6.5%**
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](home.png)
+
+### 🔮 Price Predictor
+![Prediction](prediction.png)
+
+### 📊 Analysis Dashboard
+![Dashboard](dashboard.png)
+
+### 🤖 Smart Recommender
+![Recommender](recommender.png)
+
+### 📈 Price Insights
+![Insights](insights.png)
+
+
 
 ## 🧠 Model Benchmarking Results
 
